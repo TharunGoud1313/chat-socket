@@ -19,7 +19,7 @@ io.on("connection", (socket) => {
 
   socket.on("join_room", (chatId) => {
     socket.join(chatId); // this should be same for two users, so that that two users can chat
-    console.log("User Joined Chat----", chatId);
+    console.log("User Joined Chat------", chatId);
   });
 
   socket.on("send_msg", (data) => {
